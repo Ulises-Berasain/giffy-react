@@ -1,0 +1,78 @@
+body{
+  background-color: #282c34;
+  width: 100%;
+  padding-left: 5px;
+}
+
+.App{
+  text-align: center;
+  width: 100%;
+}
+
+#input-gif{
+  width: 55%;
+  font-weight: 700;
+  margin-top: 16px;
+}
+
+.button-gif{
+  border-radius:6px;
+  width: 25%;
+  background: white;
+  color:  #282c34;
+  font-weight: 700;
+  transition : transform 0.5s ease;
+  margin-left: 10px;
+}
+
+.button-gif:hover{
+  background: rgba(95, 10, 169, 0.896);
+  color: white;
+  transform: scale(1.1);
+}
+
+.App-content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  padding-top: 16px;
+}
+
+@media screen and (min-width: 480px){
+  body{
+    padding-left: 0%;
+  }
+
+  .button-gif{
+    width: 20%;
+  }
+
+  #input-gif{
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .button-gif{
+    width: 15%;
+  }
+
+  #input-gif{
+    width: 35%;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  body{
+    padding-left: 16px;
+  }
+
+  .button-gif{
+    width: 8%;
+  }
+
+  #input-gif{
+    width: 15%;
+  }
+}
