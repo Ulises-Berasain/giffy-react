@@ -10,10 +10,6 @@ body{
   margin-left: 15px;
 }
 
-.logo-home{
-  text-align: center;
-}
-
 .logo-giffy{
   max-width: 25vw;
   margin-left: 35%;
@@ -24,23 +20,20 @@ body{
   cursor: pointer;
 }
 
-.gifs-populares{
+.ultima-busqueda{
   color:#17d8e2;
   font-size: 28px;
   padding-left: 3rem;
   margin-top: 1rem;
 }
 
-.contenedor-list-link{
-  margin-top: -15px;
-}
-
-.list-link{
-  margin-top: -30px;
-  list-style:none;
-  font-size: 16px;
-  text-align: left;
-  padding: 20px;
+.contenedor-links{
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  padding-top: 16px;
 }
 
 a{
@@ -99,10 +92,6 @@ a{
   }
 
   .gifs-populares{
-    text-align: center;
-  }
-  
-  .list-link{
     text-align: center;
   }
 

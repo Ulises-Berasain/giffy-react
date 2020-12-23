@@ -7,5 +7,9 @@ export default function SearchResults({ params }){
     const { keyword } = params;
     const { loading, gifs } = useGifs({keyword});
 
-    return (<React.Fragment>{loading ? <Spinner /> : <ListOfGifs gifs={gifs}/>}</React.Fragment>);
+    return (
+        <React.Fragment>
+            {loading ? <Spinner /> : <ListOfGifs gifs={gifs}/>}
+        </React.Fragment>
+    );
 };
