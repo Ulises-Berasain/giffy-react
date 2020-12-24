@@ -5,7 +5,6 @@ import Home from "./pages/Home.js";
 import giffy from "./img/giffy.png";
 import SearchResults from "./pages/SearchResults";
 import Detail from "./pages/Details";
-import StaticContext from "./context/StaticContext";
 import {GifsContextProvider}from "./context/GifsContext";
 
 export default function App() {
@@ -22,7 +21,6 @@ export default function App() {
   };
 
   return (
-    <StaticContext.Provider value={""}>
       <div className="App">
         <Link className="link-logo" to="/"><img className="logo-giffy" alt="Giffy logo" src={giffy} /></Link>
 
@@ -44,6 +42,5 @@ export default function App() {
         </GifsContextProvider>
 
       </div>
-    </StaticContext.Provider>
   );
 };
