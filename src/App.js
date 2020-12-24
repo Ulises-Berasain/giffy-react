@@ -1,10 +1,12 @@
 import React, {useState}from "react";
 import './App.css';
-import { Route, Link, useLocation } from "wouter";
+import {Route, Link, useLocation} from "wouter";
 import Home from "./pages/Home.js";
 import giffy from "./img/giffy.png";
 import SearchResults from "./pages/SearchResults";
-
+import Detail from "./pages/Details";
+import StaticContext from "./context/StaticContext";
+import {GifsContextProvider}from "./context/GifsContext";
 
 export default function App() {
   const [keyword, setKeyword] = useState("");
@@ -20,22 +22,28 @@ export default function App() {
   };
 
   return (
-    <div className="App">
-      <Link className="link-logo" to="/"><img className="logo-giffy" alt="Giffy logo" src={giffy} /></Link>
+    <StaticContext.Provider value={""}>
+      <div className="App">
+        <Link className="link-logo" to="/"><img className="logo-giffy" alt="Giffy logo" src={giffy} /></Link>
 
-      <form onSubmit={handleSubmit} className="contenedor-input">
-        <input onChange={handleChange} type="text" value={keyword} id="input-gif" placeholder="Search a Gif"/>
-        <button className="button-gif">Search Gif</button>
-      </form>
+        <form onSubmit={handleSubmit} className="contenedor-input">
+          <input onChange={handleChange} type="text" value={keyword} id="input-gif" placeholder="Search a Gif"/>
+          <button className="button-gif">Search Gif</button>
+        </form>
 
-      <div className="contenedor-links">
-        <Route path="/" component={Home}></Route>
+        <GifsContextProvider>
+          <div className="contenedor-links">
+            <Route path="/" component={Home}/>
+          </div>
+
+          <section className="App-content">
+            <Route path="/search/:keyword" component={SearchResults}/>
+
+            <Route path="/gif/:id" component={Detail}/>
+          </section>
+        </GifsContextProvider>
+
       </div>
-
-      <section className="App-content">
-        <Route path="/search/:keyword" component={SearchResults}/>
-      </section>
-
-    </div>
+    </StaticContext.Provider>
   );
 };
