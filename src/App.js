@@ -30,13 +30,12 @@ export default function App() {
         </form>
 
         <GifsContextProvider>
-          <div className="contenedor-links">
+          <div className="home-container">
             <Route path="/" component={Home}/>
           </div>
 
           <section className="App-content">
             <Route path="/search/:keyword" component={SearchResults}/>
-
             <Route path="/gif/:id" component={Detail}/>
           </section>
         </GifsContextProvider>

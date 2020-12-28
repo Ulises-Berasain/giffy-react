@@ -4,6 +4,12 @@ body{
   padding-left: 5px;
 }
 
+.home-container{
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
 .contenedor-input{
   display:grid;
   grid-template-columns: repeat(4, 25vw);
@@ -14,10 +20,33 @@ body{
   max-width: 25vw;
   margin-left: 35%;
   margin-top: 10px;
+  border: 1px solid #17d8e2;
 }
 
 .logo-giffy:hover{
   cursor: pointer;
+}
+
+.trends-container{
+  max-width: 40vw;
+  min-width: 30vw;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.title-trends{
+  color:#17d8e2;
+  font-size: 24px;
+}
+
+.trends-container a{
+  font-size: 16px;
+  display:inline-block;
+  margin: 5px;
+}
+
+.trends-container a:hover{
+  color:#17d8e2;
 }
 
 .ultima-busqueda{
@@ -51,6 +80,23 @@ a{
   grid-column: span 2;
   font-weight: 700;
   margin-top: 16px;
+}
+
+.button-more-gifs{
+  border-radius:6px;
+  width: 25%;
+  height: 50%;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  background: white;
+  color:  #282c34;
+  font-weight: 700;
+  transition : transform 0.5s ease;
+}
+
+.button-more-gifs:hover{
+  background: #17d8e2;
+  transform: scale(1.1);
 }
 
 .button-gif{
