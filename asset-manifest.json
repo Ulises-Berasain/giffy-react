@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/giffy/static/css/main.ff41a392.chunk.css",
-    "main.js": "/giffy/static/js/main.45c1c8f0.chunk.js",
-    "main.js.map": "/giffy/static/js/main.45c1c8f0.chunk.js.map",
-    "runtime-main.js": "/giffy/static/js/runtime-main.cdcb1c6a.js",
-    "runtime-main.js.map": "/giffy/static/js/runtime-main.cdcb1c6a.js.map",
-    "static/js/2.3e93a84c.chunk.js": "/giffy/static/js/2.3e93a84c.chunk.js",
-    "static/js/2.3e93a84c.chunk.js.map": "/giffy/static/js/2.3e93a84c.chunk.js.map",
-    "static/js/3.67057e34.chunk.js": "/giffy/static/js/3.67057e34.chunk.js",
-    "static/js/3.67057e34.chunk.js.map": "/giffy/static/js/3.67057e34.chunk.js.map",
-    "index.html": "/giffy/index.html",
-    "static/css/main.ff41a392.chunk.css.map": "/giffy/static/css/main.ff41a392.chunk.css.map",
-    "static/js/2.3e93a84c.chunk.js.LICENSE.txt": "/giffy/static/js/2.3e93a84c.chunk.js.LICENSE.txt",
-    "static/media/giffy.6c15b7f8.png": "/giffy/static/media/giffy.6c15b7f8.png"
+    "main.css": "/giffy-react/static/css/main.ff41a392.chunk.css",
+    "main.js": "/giffy-react/static/js/main.45c1c8f0.chunk.js",
+    "main.js.map": "/giffy-react/static/js/main.45c1c8f0.chunk.js.map",
+    "runtime-main.js": "/giffy-react/static/js/runtime-main.56acf2b0.js",
+    "runtime-main.js.map": "/giffy-react/static/js/runtime-main.56acf2b0.js.map",
+    "static/js/2.3e93a84c.chunk.js": "/giffy-react/static/js/2.3e93a84c.chunk.js",
+    "static/js/2.3e93a84c.chunk.js.map": "/giffy-react/static/js/2.3e93a84c.chunk.js.map",
+    "static/js/3.67057e34.chunk.js": "/giffy-react/static/js/3.67057e34.chunk.js",
+    "static/js/3.67057e34.chunk.js.map": "/giffy-react/static/js/3.67057e34.chunk.js.map",
+    "index.html": "/giffy-react/index.html",
+    "static/css/main.ff41a392.chunk.css.map": "/giffy-react/static/css/main.ff41a392.chunk.css.map",
+    "static/js/2.3e93a84c.chunk.js.LICENSE.txt": "/giffy-react/static/js/2.3e93a84c.chunk.js.LICENSE.txt",
+    "static/media/giffy.6c15b7f8.png": "/giffy-react/static/media/giffy.6c15b7f8.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.cdcb1c6a.js",
+    "static/js/runtime-main.56acf2b0.js",
     "static/js/2.3e93a84c.chunk.js",
     "static/css/main.ff41a392.chunk.css",
     "static/js/main.45c1c8f0.chunk.js"
